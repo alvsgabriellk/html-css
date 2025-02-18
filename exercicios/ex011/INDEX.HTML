@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagens dinâmicas</h1>
+<p>Tente abrir as imagens em locais diferentes, ou diminua e aumente o tamanho do seu site.</p>
+<picture> <!--concentracação das fontes de imagens / <picture>-->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--O <type> vai servir pra indicar qual vai ser o tipo da foto-->
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--O <srcset> vai configurar o nome da imagem quando o tamanho indicado for atingido, e o <media> indica o tamanho máximo a ser sugerido para carregar a imagem sugerida no <srcset>-->
+    <img src="imagens/foto-g.png" alt="Imagem flexivel">
+</picture>
+<h2>Tamanho e dimensões das imagens / pixel</h2>
+<ol>
+    <li>imagem p / 300px|80.000</li>
+    <li>imagem m / 700px|80.000</li>
+    <li>imagem g / 1000px|80.000</li>
+</ol>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+    <img src="imagens/grande.png" alt="Imagem flexivel">
+</picture>
+<h1>Reproduzindo áudio</h1>
+<p>reprodução de áudio em HTML5</p>
+<p>Maneira simples(se n aparecer é pq nesse navegador não funciona): <audio src="midia/guanacast-33.mp3" controls autoplay></audio></p> <!--<autoplay> pra reproduzir, o <audio> pra o link/documento do áudio, <constrols> pra aparecer a reprodução.-->
+    <!--Essa de cima não tem total compatibilidade-->
+    <!--compatibilidade com todos os navegadores, MP3/WAV/OGG-->
+    <audio preload="metadata" loop> <!-- <auto> Vai carregar o áudio assim que a página carregar / <metadata> Vai carregar apenas as informações do arquivo / o <none> não carrega nada,só quando vc apertar o pause / <loop> pra o áudio continuar rodando dps que parar-->
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+    <p>Se o seu navegador não conseguir reproduzir o áudio, <a href="midia/guanacast-33.mp3">Clique aqui para baixar ele.</a></p>
+</body>
+</html>

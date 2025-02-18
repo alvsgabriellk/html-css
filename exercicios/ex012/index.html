@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+  <h1>Colocando videos no site hospedado localmente</h1> 
+  <p>Este video está hospedado no meu próprio servidor </p>
+  <video src="midia/meu-videoMP.mp4" width="560" poster="imagens/limoes-capa.png" controls> <!--Forma simples mas não recomendada-->
+<p>infelizmente o video não reproduzio no site.</p>
+  </video>
+  <h2>Outra forma também</h2>
+<video width="560" poster="imagens/limoes-capa.png" controls>
+  <source src="midia/meu-videoMP.mp4" type="vieo/mp4">
+  <source src="midia/Meu-VideoMK.mkv" type="video/mkv">
+  <source src="midia/Meu-VideoWEM.webm" type="video/webm"> <!--A ordem dos arquivos tem total influência, Videos hospedados vão consumir muito tráfico de dados e fica pesado pro seu cliente-->
+<p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+  </video>
+  <h2>Inserindo videos do Youtube</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=65WLgsooZ5CFcYa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <h2>Inserindo videos do vimeo</h2>
+  <iframe src="https://player.vimeo.com/video/29315013?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Animation Reel"></iframe>
+</body>
+</html>
