@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadrasto.php" method="get" autocomplete="on"> <!--get para pouca segurança e post para uma segurança maior-->
+        <p><label for="iusu">usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" autocomplete="nickname"> <!--length para o site reconhecer a quantidade adequada-->
+        </p>
+        <p><label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="4" placeholder="sua senha" autocomplete="current-password"></p> <!--Dica do que botar na caixa-->
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Excluir"></p>
+    </form>
+</body>
+</html>
