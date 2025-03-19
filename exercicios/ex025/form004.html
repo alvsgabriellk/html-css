@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="cadrasto.php" method="get">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="username" minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required autocomplete="tel">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
