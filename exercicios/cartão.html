@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        div {
+            background-color: lightslategray;
+            display: block;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.51);
+            /*text-align: center;*/
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+        }
+
+        /*
+        form {
+            position: absolute;
+        } */
+
+        #form1 {
+            position: relative;
+            left: 0px;
+        }
+
+        form#form2 {
+            position: relative;
+            left: 200px;
+        }
+
+        input {
+            border-color: rgba(0, 0, 0, 0.816);
+            box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.51);
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra se o seu cartão foi clonado!</h1>
+    <div>
+        <h2>Adicionar cartão</h2>
+        <form action="" method="get" id="form1">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+        </form>
+        <form action="" method="get" id="form2">
+            <p>
+                <label for="inmr">Número</label>
+                <input type="number" name="cartão" id="inmr">
+            </p>
+        </form>
+        <form action="">
+            <p>
+                <label for="icpf">CPF</label>
+                <input type="number" name="CPF" id="icpf">
+            </p>
+            <p>
+                <label for="ivali">Validade</label>
+                <input type="number" name="validade" id="ivali">
+            </p>
+            <p>
+                <label for="icvc">CVC</label>
+                <input type="number" name="cvc" id="icvc">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
